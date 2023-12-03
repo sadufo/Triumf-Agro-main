@@ -20,6 +20,10 @@ a {
   text-transform: uppercase;
   color: #000; }
 
+a:hover {
+  color: #ff6900;
+  transition: 0.5s; }
+
 h1 {
   color: #f8f8f8;
   text-align: center;
@@ -97,8 +101,6 @@ button {
           color: black; }
         .page__wrapper nav .nav__link a:hover {
           color: #ff6900;
-          fill: #ff6900;
-          stroke: #ff6900;
           transition: 0.5s; }
       .page__wrapper nav .nav__contacts {
         width: 38%;
@@ -134,7 +136,7 @@ button {
           height: 37px;
           border-radius: 4px;
           border: none;
-          background: #026B38;
+          background: #026b38;
           cursor: pointer;
           text-transform: uppercase; }
           .page__wrapper nav .nav__contacts .nav__btn a {
@@ -234,16 +236,16 @@ button {
             align-items: center;
             text-align: left;
             border-radius: 100px;
-            background: #CCDB98;
+            background: #ccdb98;
             padding: 66px 61px; }
             .page__wrapper .aboutProducts .products__item .text__block .text__container p {
               width: 815px;
               font-size: 1.3vw;
               text-align: justify; }
           .page__wrapper .aboutProducts .products__item .text__block .color-1 {
-            background: #91C289; }
+            background: #91c289; }
           .page__wrapper .aboutProducts .products__item .text__block .color-2 {
-            background: #215D34; }
+            background: #215d34; }
             .page__wrapper .aboutProducts .products__item .text__block .color-2 p {
               color: #fff; }
           .page__wrapper .aboutProducts .products__item .text__block .text-right {
@@ -255,10 +257,12 @@ button {
           .page__wrapper .aboutProducts .products__item .img__block img {
             width: 100%;
             max-height: 1141px; }
-    .page__wrapper .product__bg {
+    .page__wrapper .afterProduct__bg,
+    .page__wrapper .afterAboutUs__bg {
       width: 100%;
       height: auto; }
-      .page__wrapper .product__bg .bg__item {
+      .page__wrapper .afterProduct__bg .bg__item,
+      .page__wrapper .afterAboutUs__bg .bg__item {
         width: 100%;
         height: 100%;
         object-fit: cover; }
@@ -266,7 +270,9 @@ button {
       width: 100%;
       display: flex;
       flex-direction: column;
-      padding-top: 150px; }
+      padding-top: 150px;
+      padding-bottom: 55px;
+      gap: 100px 0; }
       .page__wrapper .aboutUs p {
         font-weight: 400;
         font-size: 1.3vw; }
@@ -274,18 +280,20 @@ button {
         width: 100%;
         display: flex;
         flex-direction: column;
-        gap: 140px 0; }
+        gap: 100px 0; }
         .page__wrapper .aboutUs__info .info__text {
           display: flex;
           justify-content: space-between;
           gap: 0 50px;
           text-align: justify; }
           .page__wrapper .aboutUs__info .info__text h3 {
+            font-size: 4.1vw;
             text-align: left; }
           .page__wrapper .aboutUs__info .info__text img {
             width: 30vw; }
           .page__wrapper .aboutUs__info .info__text .text__item {
-            max-width: 934px;
+            max-width: 825px;
+            width: 60%;
             display: flex;
             flex-direction: column;
             gap: 80px 0; }
@@ -300,6 +308,32 @@ button {
             width: 30vw; }
         .page__wrapper .aboutUs__info__team {
           display: flex;
-          flex-direction: column; } }
+          flex-direction: column; }
+    .page__wrapper .footer {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 75px;
+      margin-bottom: 75px; }
+      .page__wrapper .footer a {
+        font-size: 14px;
+        font-weight: 400; }
+      .page__wrapper .footer .footer__logo {
+        width: auto;
+        height: auto; }
+      .page__wrapper .footer .footer__link {
+        display: flex;
+        width: auto;
+        height: auto;
+        gap: 0 18vw; }
+        .page__wrapper .footer .footer__link .allLink {
+          display: flex;
+          flex-direction: column;
+          gap: 14px 0; }
+      .page__wrapper .footer .footer__media {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px 0; } }
 
 /*# sourceMappingURL=main.css.map */
