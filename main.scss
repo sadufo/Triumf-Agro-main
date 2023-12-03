@@ -6,9 +6,14 @@
   font-family: "Garet";
   src: url(./fonts/Garet.otf);
 }
+@font-face {
+  font-family: "Mulish";
+  src: url(./fonts/Mulish-VariableFont_wght.ttf);
+}
 
 $font-muller: "Muller";
 $font-garet: 'Garet';
+$font-mulish: 'Mulish';
 $accent-color: #ff6900;
 $text-color: #28292d;
 
@@ -36,22 +41,31 @@ h1 {
   font-weight: 300;
 }
 h2 {
-  font-family: $font-muller;
+  font-family: $font-mulish;
   font-size: 65px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   color: $text-color;
 }
+h3{
+  color: $text-color;
+  text-align: center;
+  font-family: $font-mulish;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120.023%;
+}
 p {
-    color: #28292D;
-  font-family: $font-muller;
+    color: $text-color;
+  font-family: $font-mulish;
   font-size: 25px;
   font-style: normal;
   font-weight: 300;
   line-height: 140%;
 }
 button {
-  font-family: $font-muller;
+  font-family: $font-mulish;
   cursor: pointer;
     border: none;
     color: #fff;
@@ -64,8 +78,8 @@ button {
     flex-direction: column;
     .container {
       position: relative;
-      max-width: 1400px;
-      width: 80%;
+      max-width: 1600px;
+      width: 90%;
       margin: 0 auto;
     }
     nav {
@@ -239,6 +253,7 @@ button {
     .aboutProducts {
         display: grid;
         grid-gap: 94px;
+        padding-bottom: 40px;
       .products__item {
         width: 100%;
         display: flex;
@@ -252,14 +267,15 @@ button {
         //   justify-content: center;
         //   align-items: center;
           h2{
-            font-size: 3.9vw;
-            font-weight: 500;
-            padding-top: 100px;
+            width: 85%;
+            text-align: center;
+            font-size: 4.1vw;
+            padding-top: 50px;
           }
           .text__container{
             position: absolute;
             top: 30%;
-            width: 120%;
+            width: 100%;
             max-width: 1500px;
             height: auto;
             min-height: auto;
@@ -269,10 +285,21 @@ button {
             text-align: left;
             border-radius: 100px;
             background: #CCDB98;
+            padding: 66px 61px;
             p{
-                width: 80%;
-                font-size: 1.2vw;
-                padding: 50px 0;
+                width: 815px;
+                font-size: 1.3vw;
+                text-align: justify;
+                // padding: 50px 0;
+            }
+          }
+          .color-1{
+            background: #91C289;
+          }
+          .color-2{
+            background: #215D34;
+            p{
+              color: #fff;
             }
           }
           .text-right{
@@ -290,5 +317,66 @@ button {
         }
       }
     }
+    .product__bg{
+      width: 100%;
+      height: auto;
+      .bg__item{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .aboutUs{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding-top: 150px;
+      p{
+        font-weight: 400;
+        font-size: 1.3vw;
+      }
+      &__info{
+      width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 140px 0;
+        .info__text{
+          display: flex;
+          justify-content: space-between;
+          gap: 0 50px;
+          text-align: justify;
+          h3{
+            text-align: left;
+          }
+          img{
+            width: 30vw;
+          }
+          .text__item{
+          max-width: 934px;
+            display: flex;
+            flex-direction: column;
+            gap: 80px 0;
+          }
+        }
+        .info__img{
+        display: flex;
+        // gap: 0 65px;
+        justify-content: space-between;
+        .info__img-1{
+          width: 26vw;
+        }
+        .info__img-2{
+          width: 20vw;
+        }
+        .info__img-3{
+          width: 30vw;
+        }
+      }
+      &__team{
+        display: flex;
+        flex-direction: column
+      }
+    }
   }
+}
 }
