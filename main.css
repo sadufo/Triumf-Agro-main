@@ -290,7 +290,7 @@ button {
             font-size: 4.1vw;
             text-align: left; }
           .page__wrapper .aboutUs__info .info__text img {
-            width: 30vw; }
+            width: 37%; }
           .page__wrapper .aboutUs__info .info__text .text__item {
             max-width: 825px;
             width: 60%;
@@ -301,11 +301,11 @@ button {
           display: flex;
           justify-content: space-between; }
           .page__wrapper .aboutUs__info .info__img .info__img-1 {
-            width: 26vw; }
+            width: 30%; }
           .page__wrapper .aboutUs__info .info__img .info__img-2 {
-            width: 20vw; }
+            width: 25%; }
           .page__wrapper .aboutUs__info .info__img .info__img-3 {
-            width: 30vw; }
+            width: 37%; }
         .page__wrapper .aboutUs__info__team {
           display: flex;
           flex-direction: column; }
