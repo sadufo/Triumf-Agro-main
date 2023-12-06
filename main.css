@@ -152,7 +152,8 @@ button {
       z-index: 1001; }
       .page__wrapper header .header__title h1 {
         text-align: left;
-        font-size: 4vw; }
+        font-size: 4vw;
+        text-wrap: nowrap; }
       .page__wrapper header .header__title img {
         position: relative;
         top: 25px;
