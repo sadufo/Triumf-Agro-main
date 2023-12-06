@@ -178,13 +178,14 @@ button {
         width: 580px;
         position: absolute;
         top: 204px;
-        left: 300px;
+        left: 15.6vw;
         display: flex;
         justify-content: center;
         align-items: center;
         z-index: 1001;
         h1 {
           text-align: left;
+          font-size: 4vw;
         }
         img {
           position: relative;
