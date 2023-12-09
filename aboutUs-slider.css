@@ -1,13 +1,13 @@
 .slider-container {
     position: relative;
     width: 80%;
-    height: 30vh;
+    height: auto;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 20px;
     overflow: hidden;
+    border-radius: 25px;
   }
   
   .slider-content {
@@ -15,7 +15,7 @@
     height: 90%;
     display: flex;
     transition: transform 0.5s ease-in-out;
-    border-radius: 25px;
+    /* border-radius: 25px; */
   }
   
   .slider-item {
