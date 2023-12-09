@@ -68,6 +68,8 @@ button {
     overflow: hidden;
     display: flex;
     flex-direction: column; }
+    .page__wrapper .burger__container {
+      display: none; }
     .page__wrapper .container {
       position: relative;
       max-width: 1600px;

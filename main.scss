@@ -80,6 +80,9 @@ button {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    .burger__container{
+      display: none;
+    }
     .container {
       position: relative;
       max-width: 1600px;
