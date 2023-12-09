@@ -141,6 +141,8 @@ button {
           text-transform: uppercase; }
           .page__wrapper nav .nav__contacts .nav__btn a {
             color: #fff; }
+    .page__wrapper header .mob__btn {
+      display: none; }
     .page__wrapper header .header__title {
       width: 580px;
       position: absolute;
@@ -165,6 +167,8 @@ button {
       flex-direction: column;
       align-items: center;
       padding: 120px 0; }
+      .page__wrapper .weHave .weHave__mobile-btn {
+        display: none; }
       .page__wrapper .weHave__title {
         display: flex;
         flex-direction: column;
@@ -268,6 +272,9 @@ button {
         width: 100%;
         height: 100%;
         object-fit: cover; }
+      .page__wrapper .afterProduct__bg .bg__item-mob,
+      .page__wrapper .afterAboutUs__bg .bg__item-mob {
+        display: none; }
     .page__wrapper .aboutUs {
       width: 100%;
       display: flex;
@@ -275,6 +282,10 @@ button {
       padding-top: 150px;
       padding-bottom: 55px;
       gap: 100px 0; }
+      .page__wrapper .aboutUs .mob-title {
+        display: none; }
+      .page__wrapper .aboutUs .mob-slider {
+        display: none; }
       .page__wrapper .aboutUs p {
         font-weight: 400;
         font-size: 1.3vw; }
@@ -289,8 +300,11 @@ button {
           gap: 0 50px;
           text-align: justify; }
           .page__wrapper .aboutUs__info .info__text h3 {
+            width: 80%;
             font-size: 4.1vw;
             text-align: left; }
+          .page__wrapper .aboutUs__info .info__text p {
+            width: 90%; }
           .page__wrapper .aboutUs__info .info__text img {
             width: 37%; }
           .page__wrapper .aboutUs__info .info__text .text__item {
@@ -337,5 +351,213 @@ button {
         display: flex;
         flex-direction: column;
         gap: 20px 0; } }
+@media (min-width: 360px) and (max-width: 575px) {
+  * {
+    padding: 0;
+    margin: 0; }
+
+  .page__wrapper {
+    overflow: hidden; }
+    .page__wrapper nav {
+      display: none; }
+    .page__wrapper header {
+      background-image: url(./img/mobBGHeader.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      width: 100%;
+      height: 85vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .page__wrapper header .swiper {
+        display: none; }
+      .page__wrapper header .mob__btn {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 27px 0;
+        padding-bottom: 65px; }
+        .page__wrapper header .mob__btn .mob_b {
+          text-align: center;
+          font-family: "Mulish";
+          font-size: 10px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: 100%;
+          text-transform: uppercase; }
+        .page__wrapper header .mob__btn .btn-1 {
+          width: 50%;
+          height: 40.532px;
+          flex-shrink: 0;
+          border-radius: 4px;
+          border: 1px solid #FFF;
+          background: rgba(149, 209, 51, 0.8); }
+        .page__wrapper header .mob__btn .btn-2 {
+          width: 40%;
+          height: 43.404px;
+          flex-shrink: 0;
+          border-radius: 4px;
+          border: 1px solid #FFF;
+          background: rgba(248, 248, 248, 0.9);
+          color: rgba(149, 209, 51, 0.8); }
+      .page__wrapper header .header__title {
+        height: auto;
+        width: 100%;
+        display: flex;
+        padding-top: 35%;
+        padding-left: 5%; }
+        .page__wrapper header .header__title h1 {
+          text-wrap: nowrap;
+          color: #fff;
+          text-align: center;
+          font-family: Garet;
+          font-size: 9.4vw;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 120.023%;
+          width: 185px; }
+          .page__wrapper header .header__title h1 img {
+            width: 30px; }
+    .page__wrapper .weHave {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .page__wrapper .weHave .weHave__mobile-btn {
+        width: 100%;
+        height: auto; }
+        .page__wrapper .weHave .weHave__mobile-btn .weHave-btn {
+          width: 100%;
+          height: 10vh;
+          background: transparent;
+          border: none;
+          color: #000;
+          font-family: "Mulish";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 120.023%;
+          justify-content: center; }
+      .page__wrapper .weHave .weHave__title {
+        display: none; }
+      .page__wrapper .weHave .weHave__list {
+        width: 100%;
+        height: auto;
+        display: none;
+        flex-direction: column; }
+        .page__wrapper .weHave .weHave__list .list__item {
+          width: 100%;
+          height: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .page__wrapper .weHave .weHave__list .list__item img {
+            width: 70%; }
+          .page__wrapper .weHave .weHave__list .list__item button {
+            display: none; }
+    .page__wrapper .aboutProducts {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .page__wrapper .aboutProducts .products__item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center; }
+        .page__wrapper .aboutProducts .products__item .text__block {
+          order: 2;
+          width: 70%;
+          height: auto;
+          border-radius: 20px;
+          padding: 100px 23px 23px 23px;
+          background: #CCDB98; }
+          .page__wrapper .aboutProducts .products__item .text__block h2 {
+            display: none; }
+          .page__wrapper .aboutProducts .products__item .text__block p {
+            text-align: justify;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 140%; }
+        .page__wrapper .aboutProducts .products__item .mobCol-1 {
+          background: #91C289; }
+        .page__wrapper .aboutProducts .products__item .mobCol-2 {
+          background: #215D34; }
+          .page__wrapper .aboutProducts .products__item .mobCol-2 p {
+            color: #FFF; }
+        .page__wrapper .aboutProducts .products__item .img__block {
+          order: 1;
+          width: 100%;
+          position: relative;
+          top: 10vh; }
+          .page__wrapper .aboutProducts .products__item .img__block img {
+            width: 82%;
+            height: 395px;
+            flex-shrink: 0;
+            border-radius: 80px; }
+    .page__wrapper .afterProduct__bg,
+    .page__wrapper .afterAboutUs__bg {
+      display: flex; }
+      .page__wrapper .afterProduct__bg .bg__item,
+      .page__wrapper .afterAboutUs__bg .bg__item {
+        display: none; }
+      .page__wrapper .afterProduct__bg .bg__item-mob,
+      .page__wrapper .afterAboutUs__bg .bg__item-mob {
+        width: 100%;
+        object-fit: cover;
+        padding: 15px 0; }
+    .page__wrapper .aboutUs {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .page__wrapper .aboutUs .mob-title {
+        width: 100%;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120.023%;
+        padding-bottom: 20px; }
+      .page__wrapper .aboutUs .aboutUs__info {
+        width: 80%;
+        display: flex;
+        gap: 0 10px; }
+        .page__wrapper .aboutUs .aboutUs__info .info__text {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between; }
+          .page__wrapper .aboutUs .aboutUs__info .info__text .text__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 30px; }
+            .page__wrapper .aboutUs .aboutUs__info .info__text .text__item .dt-title {
+              display: none; }
+            .page__wrapper .aboutUs .aboutUs__info .info__text .text__item p {
+              text-align: justify;
+              font-size: 2.66vw;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 140%; }
+        .page__wrapper .aboutUs .aboutUs__info .info__img {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          gap: 10px 0; }
+      .page__wrapper .aboutUs .display-none {
+        display: none; }
+    .page__wrapper .footer {
+      display: none; } }
 
 /*# sourceMappingURL=main.css.map */

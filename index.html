@@ -9,6 +9,7 @@
     />
     <link rel="stylesheet" href="./main.css" />
     <link rel="stylesheet" href="./slider.css" />
+    <link rel="stylesheet" href="./aboutUs-slider.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./main.js" defer></script>
@@ -42,11 +43,14 @@
             </butoon>
           </div>
         </nav>
-        <!-- <div class="container"> -->
-          <div class="header__title">
-            <h1 class="title"><img src="./img/logoIcon.svg" alt="#">ТРИУМФ <br/> АГРО УКРАЇНА</h1>
-          </div>
-        <!-- </div> -->
+        
+        <div class="header__title">
+          <h1 class="title"><img src="./img/logoIcon.svg" alt="#">ТРИУМФ <br/> АГРО УКРАЇНА</h1>
+        </div>
+        <div class="mob__btn">
+          <button class="mob_b btn-1">Залишити заявку</button>
+          <button class="mob_b btn-2">Наша продукція</button>
+        </div>
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide"><img src="./img/headerIMG-3.png" alt=""></div>
@@ -56,6 +60,24 @@
         </div>
       </header>
       <section class="weHave container">
+        <div class="weHave__mobile-btn">
+          <button class="weHave-btn">
+            Наша продукція<br>
+            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+              <g filter="url(#filter0_b_126_144)">
+              <path d="M3.64645 11.3536C3.84171 11.5488 4.15829 11.5488 4.35355 11.3536L7.53553 8.17157C7.7308 7.97631 7.7308 7.65973 7.53553 7.46447C7.34027 7.2692 7.02369 7.2692 6.82843 7.46447L4 10.2929L1.17157 7.46447C0.976311 7.2692 0.659728 7.2692 0.464466 7.46447C0.269204 7.65973 0.269204 7.97631 0.464466 8.17157L3.64645 11.3536ZM4.5 11L4.5 0H3.5L3.5 11H4.5Z" fill="black"/>
+              </g>
+              <defs>
+              <filter id="filter0_b_126_144" x="-3.68188" y="-4" width="15.3638" height="19.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feGaussianBlur in="BackgroundImageFix" stdDeviation="2"/>
+              <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_126_144"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_126_144" result="shape"/>
+              </filter>
+              </defs>
+            </svg>
+          </button>
+        </div>
         <div class="weHave__title container">
             <h2>Наша продукція</h2>
         </div>
@@ -98,7 +120,7 @@
           <div class="img__block">
             <img src="./img/aboutBurak.png" alt="#">
           </div>
-          <div class="text__block">
+          <div class="text__block mobCol-1">
             <h2>Буряк</h2>
             <div class="text__container color-1 text-right container">
               <p>
@@ -109,7 +131,7 @@
           </div>
         </div>
         <div class="products__item container">
-          <div class="text__block">
+          <div class="text__block mobCol-2">
             <h2>Цибуля</h2>
             <div class="text__container color-2 container">
               <p>
@@ -143,14 +165,16 @@
       </section>
       <section class="afterProduct__bg">
         <img class="bg__item" src="./img/productBG.png" alt="#">
+        <img class="bg__item-mob" src="./img/afterProductsBG-mob.png" alt="#">
       </section>
       <sectiom class="aboutUs">
+        <h3 class="mob-title">Про нас</h3>
         <div class="aboutUs__info">
           <div class="info__text container">
             <div class="text__item">
-              <h3>Про нас</h3>
+              <h3 class="dt-title">Про нас</h3>
               <p>
-                ТРІУМФ АГРО УКРАЇНА" - компанія виробник, яка вирощує та зберігає овочеву продукцію за Голландськими технологіями та Європейськими стандартами.
+                <strong>"ТРІУМФ АГРО УКРАЇНА" -</strong> компанія виробник, яка вирощує та зберігає овочеву продукцію за Голландськими технологіями та Європейськими стандартами.
                 Наше завдання – надати споживачам здорову продукцію, що відповідає найвищим стандартам якості.
                 Ми виготовляємо продукцію самостійно і знаємо про це все.
                 Разом з нами ви вибираєте надійність та якість.
@@ -164,7 +188,7 @@
             <img class="info__img-3" src="./img/aboutUs-4.png" alt="#">
           </div>
         </div>
-        <div class="aboutUs__info">
+        <div class="aboutUs__info display-none">
           <div class="info__text container">
             <div class="text__item">
               <h3>Команда “Триумф Агро Україна”</h3>
@@ -181,9 +205,19 @@
             <img class="info__img-3" src="./img/aboutTeam-4.png" alt="#">
           </div>
         </div>
+        <div class="slider-container mob-slider">
+          <div class="slider-content">
+            <img class="slider-item" src="./img/mobslide-1.png" alt="Image 1">
+            <img class="slider-item" src="./img/mobslide-2.png" alt="Image 2">
+            <img class="slider-item" src="./img/mobslide-3.png" alt="Image 3">
+            <img class="slider-item" src="./img/mobslide-4.png" alt="Image 4">
+          </div>
+          <div class="pagination"></div>
+        </div>
       </sectiom>
       <section class="afterAboutUs__bg">
         <img class="bg__item" src="./img/afterAboutUs-BG.png" alt="#">
+        <img class="bg__item-mob" src="./img/afterAboutUs-BG.png" alt="#">
       </section>
       <section class="footer container">
         <div class="footer__logo">
