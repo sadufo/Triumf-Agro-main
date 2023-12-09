@@ -79,5 +79,16 @@ const images = ["image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg"];
         });
       });
 
-      
+    // close form
+
+    function formClose() {
+      const closeForm = document.querySelector(".form__close");
+      const form = document.querySelector(".form");
+      closeForm.addEventListener('click', function() {
+        form.style.display = 'none';
+      });
+    }
+    
+
+    formClose()
 

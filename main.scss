@@ -467,6 +467,34 @@ button {
         position: relative;
         padding: 5%;
         border-radius: 25px;
+        .form__close {
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          position: absolute;
+          top: 5%;
+          right: 5%;
+          width: 25px;
+          height: 25px;
+          cursor: pointer;
+          .line {
+            position: absolute;
+            background-color: black;
+          }
+        
+          .line1 {
+            width: 100%;
+            height: 2px;
+            transform: rotate(45deg);
+          }
+        
+          .line2 {
+            width: 100%;
+            height: 2px;
+            transform: rotate(135deg);
+          }
+        }
+
         .form__img{
             img{
               width: 200px;
@@ -482,6 +510,8 @@ button {
           width: 162px;
           height: 37px;
           border-radius: 4px;
+          font-weight: 600;
+          font-family: $font-mulish;
           border: none;
           background: #026b38;
           cursor: pointer;
@@ -501,7 +531,7 @@ button {
          a{
               text-decoration: none;
               color: #28292D;
-              font-size: 18px;
+              font-size: 0.9vw;
         }
         .form__el{
           height: 80%;
@@ -510,6 +540,7 @@ button {
           justify-content: space-between;
           .field__item{
             width: 80%;
+            height: 15%;
             position: relative;
             display: block;
             span{
@@ -522,7 +553,7 @@ button {
             }
             input, .inp__msg{
               width: 100%;
-              height: 50px;
+              height: 100%;
               margin-bottom: 10px;
               display: flex;
               flex-wrap: wrap;
