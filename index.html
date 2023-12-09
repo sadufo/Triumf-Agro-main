@@ -302,6 +302,43 @@
           </a>
         </div>
       </section>
+      <section class="form">
+        <div class="form__callMe">
+          <div class="form__img">
+              <!-- <img src="./img/formCall.svg" alt="#"> -->
+          </div>
+          <h3>Є питання?<br>Надішліть заявку і ми зв'яжемося з Вами
+          </h3>
+          <form action="" id="sendMSG" class="form__el">
+              <label class="field__item">
+                  <input name="name" class="inp__name" type="text" required>
+                  <span>Ваше ім'я</span>
+                  <div class="line"></div>
+              </label>
+              <label class="field__item">
+                  <input name="phone" class="inp__num" type="number" required>
+                  <span>Номер телефону</span>
+                  <div class="line"></div>
+              </label>
+              <label class="field__item">
+                  <input name="email" class="inp__mail" type="text" required>
+                  <span>E-mail</span>
+                  <div class="line"></div>
+              </label>
+              <label class="field__item">
+                  <textarea name="msg" class="inp__msg" maxlength="248" required></textarea>
+                  <span>Ваш коментар</span>
+                  <div class="line"></div>
+              </label>
+              <button class="callMe__btn">передзвоніть мені</button>
+          </form>
+        </div>
+        <div id="OKmsg" class="callMe__OKmsg"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="15" cy="15" r="15" fill="white"/>
+          <path d="M9.75 16.5213L13.5987 19.5L21 11.25" stroke="#FF6900" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </section>
     </div>
   </body>
 </html>
