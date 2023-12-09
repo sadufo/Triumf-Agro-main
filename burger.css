@@ -29,12 +29,12 @@
     width: 27px;
   }
   #burger-menu span:before {
-    left: 0px;
+    right: 0px;
     top: -10px;
     width: 16px;
   }
   #burger-menu span:after {
-    left: 0px;
+    right: 0px;
     top: 10px;
     width: 20px;
   }
