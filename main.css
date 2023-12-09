@@ -548,7 +548,7 @@ button {
               display: none; }
             .page__wrapper .aboutUs .aboutUs__info .info__text .text__item p {
               text-align: justify;
-              font-size: 2.66vw;
+              font-size: 10px;
               font-style: normal;
               font-weight: 600;
               line-height: 140%; }
