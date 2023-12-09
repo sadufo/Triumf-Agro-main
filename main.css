@@ -418,7 +418,8 @@ button {
           font-style: normal;
           font-weight: 300;
           line-height: 120.023%;
-          width: 185px; }
+          width: 185px;
+          text-wrap: nowrap; }
           .page__wrapper header .header__title h1 img {
             width: 30px; }
     .page__wrapper .weHave {
