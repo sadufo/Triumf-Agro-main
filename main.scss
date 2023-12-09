@@ -483,7 +483,7 @@ button {
         }
         .btn-1{
           width: 50%;
-          height: 40.532px;
+          height: 30px;
           flex-shrink: 0;
           border-radius: 4px;
           border: 1px solid #FFF;
@@ -491,7 +491,7 @@ button {
         }
         .btn-2{
           width: 40%;
-          height: 43.404px;
+          height: 30px;
           flex-shrink: 0;
           border-radius: 4px;
           border: 1px solid #FFF;
@@ -505,8 +505,8 @@ button {
         display: flex;
         padding-top: 35%;
         padding-left: 5%;
+        text-wrap: nowrap;
         h1 {
-          text-wrap: nowrap;
           color: #fff;
           text-align: center;
           font-family: Garet;
