@@ -670,6 +670,7 @@ button {
               display: none;
             }
             p{
+              width: 129px;
               text-align: justify;
               font-size: 2.6vw;
               font-style: normal;
@@ -682,7 +683,7 @@ button {
           width: 48%;
           display: flex;
           flex-direction: column;
-          gap: 10px 0;
+          gap: 20px 0;
         }
       }
       .display-none{
