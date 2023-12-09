@@ -63,3 +63,20 @@ const images = ["image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg"];
     }
 
     initSlider();
+
+    // burger
+    var burgerMenu = document.getElementById('burger-menu');
+    var overlay = document.getElementById('menu');
+    var bmLink = document.querySelectorAll('.bm__item');
+    burgerMenu.addEventListener('click',function(){
+      this.classList.toggle("close");
+      overlay.classList.toggle("overlay");
+    });
+
+    bmLink.forEach(function(el) {
+        el.addEventListener('click', function() {
+          burgerMenu.classList.remove('close');
+          overlay.classList.remove('overlay');
+        });
+      });
+
