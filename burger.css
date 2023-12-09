@@ -67,6 +67,7 @@
     min-height:100%;
     position: fixed;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     top:0;
@@ -79,6 +80,20 @@
     
   }
   
+  #burger__social{
+    padding-top: 50%;
+    display: flex;
+    width: 60%;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #burger__social svg{
+    width: 6vw;
+    height: 6vh;
+  }
+
   #menu.overlay{
     visibility: visible;
     opacity: 1;

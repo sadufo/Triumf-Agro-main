@@ -19,7 +19,6 @@ openItems()
 btn.addEventListener("click", openItems);
 
 
-console.log(openItems);
 
 // aboutUs slider
 const images = ["image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg"];
@@ -79,4 +78,6 @@ const images = ["image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg"];
           overlay.classList.remove('overlay');
         });
       });
+
+      
 
