@@ -4,7 +4,7 @@
     height: auto;
     width: auto;
     overflow: visible;
-    z-index:1000;
+    z-index: 1115;
     position: fixed;
     top: 8%;
     right: 5%;
@@ -62,7 +62,7 @@
   }
   
   #menu{
-    z-index:101;
+    z-index:1112;
     min-width:100%;
     min-height:100%;
     position: fixed;
