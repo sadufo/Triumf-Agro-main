@@ -736,11 +736,9 @@ button {
       height: auto;
       position: fixed;
       right: 5%;
-      bottom: 3%;
+      bottom: 1%;
       z-index: 1111;
       cursor: pointer; }
-      .page__wrapper .form__btn-open svg {
-        width: 50px; }
     .page__wrapper .form {
       width: 90%;
       height: 65vh;
