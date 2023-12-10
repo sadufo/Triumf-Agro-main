@@ -74,6 +74,9 @@ button {
   border: none;
   color: #fff;
 }
+.flex-display{
+  display: flex!important;
+}
 @media (min-width: 1200px) {
   .page__wrapper {
     width: 100%;
@@ -442,10 +445,22 @@ button {
         gap: 20px 0;
       }
     }
+    .form__btn-open{
+      width: auto;
+      height: auto;
+      position: fixed;
+      right: 5%;
+      bottom: 5%;
+      z-index: 1111;
+      cursor: pointer;
+      svg{
+        width: 50px;
+      }
+    }
     .form{
       width: 30%;
       height: 65vh;
-      display: flex;
+      display: none;
       justify-content: space-between;
       flex-wrap: wrap;
       position: fixed;
@@ -577,26 +592,26 @@ button {
             }
           } 
         }
-      }
-      .callMe__OKmsg{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 50%;
-        height: 50vh;
-        padding: 20px;
-        background-color: transparent;
-        display: none;
-        svg{
-          width: 50%;
-          height: 50%;
-          position: relative;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
+        .callMe__OKmsg{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50%;
+            height: 50vh;
+            padding: 20px;
+            background-color: transparent;
+            display: none;
+            svg{
+              width: 50%;
+              height: 50%;
+              position: relative;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
         }
-      }
+    }
   } 
 }
 
@@ -878,6 +893,173 @@ button {
       a:hover{
         color: $text-color;
       }
+    }
+    .form__btn-open{
+      width: auto;
+      height: auto;
+      position: fixed;
+      right: 5%;
+      bottom: 5%;
+      z-index: 1111;
+      cursor: pointer;
+      svg{
+        width: 50px;
+      }
+    }
+    .form{
+      width: 90%;
+      height: 65vh;
+      display: none;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      position: fixed;
+      bottom: 20%;
+      right: 5% ;
+      z-index: 1011;
+      .form__callMe{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: #FBFBFC;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        overflow: hidden;
+        position: relative;
+        padding: 5%;
+        border-radius: 25px;
+        .form__close {
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          position: absolute;
+          top: 5%;
+          right: 5%;
+          width: 25px;
+          height: 25px;
+          cursor: pointer;
+          .line {
+            position: absolute;
+            background-color: black;
+          }
+        
+          .line1 {
+            width: 100%;
+            height: 2px;
+            transform: rotate(45deg);
+          }
+        
+          .line2 {
+            width: 100%;
+            height: 2px;
+            transform: rotate(135deg);
+          }
+        }
+
+        .form__img{
+            img{
+              width: 200px;
+              height: 200px;
+              position: absolute;
+              right: -25%;
+              top: -25%;
+            }
+        }
+        }
+        .callMe__btn{
+          min-width: 107px;
+          width: 162px;
+          height: 37px;
+          border-radius: 4px;
+          font-weight: 600;
+          font-family: $font-mulish;
+          border: none;
+          background: #026b38;
+          cursor: pointer;
+          text-transform: uppercase;
+            }
+    
+            button:hover, .callMe__btn:hover{
+              transition: 0.5s;
+              box-shadow: rgb(255, 255, 255) 5px 5px, var(--button-color) 5px 5px 5px 0;
+            }
+        h3{
+              width: 80%;
+              font-size: 4.2vw;
+              line-height: 120%;
+              text-align: left;
+            }
+         a{
+              text-decoration: none;
+              color: #28292D;
+              font-size: 0.9vw;
+        }
+        .form__el{
+          height: 80%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .field__item{
+            width: 80%;
+            height: 15%;
+            position: relative;
+            display: block;
+            span{
+              position: absolute;
+              top: 15px;
+              left: 20px;
+              transition: 0.5s;
+              cursor: text;
+              color: #ACACB0;
+            }
+            input, .inp__msg{
+              width: 100%;
+              height: 100%;
+              margin-bottom: 10px;
+              display: flex;
+              flex-wrap: wrap;
+              border: 1px solid #ACACB0;
+              padding: 2%;
+              box-sizing: border-box;
+              position: relative;
+              border-radius: 4px;
+              background-color: #FBFBFC;
+            }
+            input:focus, .inp__msg:focus{
+              outline: none;
+              border-color: #95D133;
+            }
+            input:focus + span, input:valid + span,
+            .inp__msg:focus + span, .inp__msg:valid + span {
+              top: -8px;
+              left: 10px;
+              background-color: #FBFBFC;
+              padding: 0 7px;
+            }
+          } 
+        }
+        .callMe__OKmsg{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50%;
+            height: 50vh;
+            padding: 20px;
+            background-color: transparent;
+            display: none;
+            svg{
+              width: 50%;
+              height: 50%;
+              position: relative;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+        }
     }
   }
 }

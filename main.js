@@ -81,14 +81,57 @@ const images = ["image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg"];
 
     // close form
 
-    function formClose() {
       const closeForm = document.querySelector(".form__close");
       const form = document.querySelector(".form");
       closeForm.addEventListener('click', function() {
-        form.style.display = 'none';
+        form.classList.remove('flex-display');
       });
-    }
+
+    // open form
+
+      const openForm = document.querySelector('.form__btn-open');
+      openForm.addEventListener('click', function(){
+        form.classList.toggle('flex-display');
+      });
+
     
 
-    formClose()
 
+    
+
+// TelegramBot
+const TOKEN = "6262556751:AAHmOxqmzKaCpbeHJ_GBPcPWhI3T4b092Mc";
+const CHAT_ID = "-1001847801183";
+const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+const success = document.getElementById('OKmsg');
+document.getElementById('sendMSG').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    let chatMessage = `<b>!ЗАЯВКА С САЙТА!</b>\n`;
+    chatMessage += `<b>ИМЯ ОТПРАВИТЕЛЯ:</b> ${ this.name.value }\n`;
+    chatMessage += `<b>НОМЕР ОТПРАВИТЕЛЯ:</b> ${ this.phone.value }\n`;
+    chatMessage += `<b>Email ОТПРАВИТЕЛЯ:</b> ${ this.email.value }\n`;
+    chatMessage += `<b>СООБЩЕНИЯ ОТПРАВИТЕЛЯ:</b> ${ this.msg.value }\n`;
+
+    axios.post(URI_API, {
+        chat_id: CHAT_ID,
+        parse_mode: 'html',
+        text: chatMessage
+    })
+    .then((res) => {
+        this.name.value = "";
+        this.phone.value = "";
+        this.email.value = "";
+        this.msg.value = "";
+        success.style.display = "block";
+        setTimeout(()=>{
+            success.style.display = 'none'
+        },3000)
+    })
+    .catch((err) => {
+        console.log(err);
+    })
+    .finally(() => {
+        console.log('finish');
+    })
+});
