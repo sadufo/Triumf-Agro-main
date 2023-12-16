@@ -646,9 +646,9 @@ button {
           .page__wrapper .weHave__list .list__item img {
             max-width: 25vh; }
           .page__wrapper .weHave__list .list__item .item__btn {
-            width: 166px;
-            height: 51px;
-            font-size: 24px;
+            width: 132px;
+            height: 37px;
+            font-size: 1.4vw;
             font-weight: 700;
             line-height: 100%;
             font-style: normal; }
