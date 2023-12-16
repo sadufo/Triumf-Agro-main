@@ -183,6 +183,9 @@ button {
       .mob__btn{
         display: none;
       }
+      .header__title-mob{
+        display: none;
+      }
       .header__title {
         width: 580px;
         position: absolute;
@@ -637,6 +640,11 @@ button {
       .swiper {
         display: none;
       }
+      .header__title-mob{
+        width: 100%;
+        height: auto;
+        padding: 27px 0 0 14px;
+      }
       .mob__btn{
         width: 100%;
         height: auto;
@@ -674,26 +682,7 @@ button {
         }
       }
       .header__title{
-        height: auto;
-        width: 100%;
-        display: flex;
-        padding-top: 35%;
-        padding-left: 5%;
-        text-wrap: nowrap;
-        h1 {
-          color: #fff;
-          text-align: left;
-          font-family: Garet;
-          font-size: 9.4vw;
-          font-style: normal;
-          font-weight: 300;
-          line-height: 120.023%;
-          width: 100%;
-          text-wrap: nowrap;
-          img{
-            width: 30px;
-          }
-        }
+        display: none;
       }
 
     }

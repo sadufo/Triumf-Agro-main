@@ -6,15 +6,15 @@
     overflow: visible;
     z-index: 1115;
     position: fixed;
-    top: 8%;
+    top: 27px;
     right: 5%;
   }
   #burger-menu span,
   #burger-menu span:before,
   #burger-menu span:after {
-    background: #026B38;
+    background: #000;
     display: block;
-    height: 4px;
+    height: 2px;
     opacity: 1;
     position: absolute;
     transition: 0.3s ease-in-out;
@@ -44,7 +44,7 @@
     width: 27px;
     background-color: #fff;
     /* position: fixed; */
-    top: 8%;
+    top: 13px;
     right: 5%;
   }
   #burger-menu.close span:before {

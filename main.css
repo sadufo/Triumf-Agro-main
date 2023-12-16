@@ -148,6 +148,8 @@ button {
             color: #fff; }
     .page__wrapper header .mob__btn {
       display: none; }
+    .page__wrapper header .header__title-mob {
+      display: none; }
     .page__wrapper header .header__title {
       width: 580px;
       position: absolute;
@@ -516,6 +518,10 @@ button {
       justify-content: space-between; }
       .page__wrapper header .swiper {
         display: none; }
+      .page__wrapper header .header__title-mob {
+        width: 100%;
+        height: auto;
+        padding: 27px 0 0 14px; }
       .page__wrapper header .mob__btn {
         width: 100%;
         height: auto;
@@ -549,24 +555,7 @@ button {
           background: rgba(248, 248, 248, 0.9);
           color: #026B38; }
       .page__wrapper header .header__title {
-        height: auto;
-        width: 100%;
-        display: flex;
-        padding-top: 35%;
-        padding-left: 5%;
-        text-wrap: nowrap; }
-        .page__wrapper header .header__title h1 {
-          color: #fff;
-          text-align: left;
-          font-family: Garet;
-          font-size: 9.4vw;
-          font-style: normal;
-          font-weight: 300;
-          line-height: 120.023%;
-          width: 100%;
-          text-wrap: nowrap; }
-          .page__wrapper header .header__title h1 img {
-            width: 30px; }
+        display: none; }
     .page__wrapper .weHave {
       width: 100%;
       height: auto;
