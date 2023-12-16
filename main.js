@@ -10,13 +10,11 @@ var swiper = new Swiper(".mySwiper", {
 
 // open item
 const btn = document.querySelector('.weHave-btn');
-function openItems(){
-  const itemBlock = document.querySelector('.weHave__list');
-  itemBlock.style.display = itemBlock.style.display === 'none' ? 'flex' : 'none';
+const itemList = document.querySelector('.weHave__list');
+btn.addEventListener('click', function(){
+  itemList.classList.toggle('flex-display');
+});
 
-}
-openItems()
-btn.addEventListener("click", openItems);
 
 
 
