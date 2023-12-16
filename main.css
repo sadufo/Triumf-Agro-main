@@ -603,14 +603,16 @@ button {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      gap: 20px 0; }
       .page__wrapper .aboutProducts .products__item {
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: center; }
+        text-align: center;
+        position: relative; }
         .page__wrapper .aboutProducts .products__item .text__block {
           order: 2;
           width: 70%;
@@ -619,7 +621,16 @@ button {
           padding: 100px 23px 23px 23px;
           background: #CCDB98; }
           .page__wrapper .aboutProducts .products__item .text__block h2 {
-            display: none; }
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translate(-50%);
+            color: #28292D;
+            font-family: "Mulish";
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120.023%; }
           .page__wrapper .aboutProducts .products__item .text__block p {
             text-align: justify;
             font-size: 14px;
