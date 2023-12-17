@@ -9,14 +9,11 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 // open item
-const btn = document.querySelector('.weHave-btn');
-const itemList = document.querySelector('.weHave__list');
-btn.addEventListener('click', function(){
-  itemList.classList.toggle('flex-display');
+const btn = document.querySelector(".weHave-btn");
+const itemList = document.querySelector(".weHave__list");
+btn.addEventListener("click", function () {
+  itemList.classList.toggle("flex-display");
 });
-
-
-
 
 // aboutUs slider
 const images = ["image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg"];
@@ -85,75 +82,77 @@ function initSlider() {
 
 initSlider();
 
-    // burger
-    var burgerMenu = document.getElementById('burger-menu');
-    var overlay = document.getElementById('menu');
-    var bmLink = document.querySelectorAll('.bm__item');
-    burgerMenu.addEventListener('click',function(){
-      this.classList.toggle("close");
-      overlay.classList.toggle("overlay");
-    });
+// burger
+var burgerMenu = document.getElementById("burger-menu");
+var overlay = document.getElementById("menu");
+var bmLink = document.querySelectorAll(".bm__item");
+burgerMenu.addEventListener("click", function () {
+  this.classList.toggle("close");
+  overlay.classList.toggle("overlay");
+});
 
-    bmLink.forEach(function(el) {
-        el.addEventListener('click', function() {
-          burgerMenu.classList.remove('close');
-          overlay.classList.remove('overlay');
-        });
-      });
+bmLink.forEach(function (el) {
+  el.addEventListener("click", function () {
+    burgerMenu.classList.remove("close");
+    overlay.classList.remove("overlay");
+  });
+});
 
-    // close form
+// close form
 
-      const closeForm = document.querySelector(".form__close");
-      const form = document.querySelector(".form");
-      closeForm.addEventListener('click', function() {
-        form.classList.remove('flex-display');
-      });
+const closeForm = document.querySelector(".form__close");
+const form = document.querySelector(".form");
+closeForm.addEventListener("click", function () {
+  form.classList.remove("flex-display");
+});
 
-    // open form
+// open form
+const navOpenForm = document.querySelector(".nav__btn");
+const openForm = document.querySelector(".form__btn-open");
+const mobBtnOpenForm = document.querySelector(".mobOpenForm");
 
-      const openForm = document.querySelector('.form__btn-open');
-      openForm.addEventListener('click', function(){
-        form.classList.toggle('flex-display');
-      });
+const toggleFormDisplay = function () {
+  form.classList.toggle("flex-display");
+};
 
-    
-
-
-    
+openForm.addEventListener("click", toggleFormDisplay);
+navOpenForm.addEventListener("click", toggleFormDisplay);
+mobBtnOpenForm.addEventListener("click", toggleFormDisplay);
 
 // TelegramBot
 const TOKEN = "6262556751:AAHmOxqmzKaCpbeHJ_GBPcPWhI3T4b092Mc";
 const CHAT_ID = "-1001847801183";
 const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
-const success = document.getElementById('OKmsg');
-document.getElementById('sendMSG').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    let chatMessage = `<b>!ЗАЯВКА С САЙТА!</b>\n`;
-    chatMessage += `<b>ИМЯ ОТПРАВИТЕЛЯ:</b> ${ this.name.value }\n`;
-    chatMessage += `<b>НОМЕР ОТПРАВИТЕЛЯ:</b> ${ this.phone.value }\n`;
-    chatMessage += `<b>Email ОТПРАВИТЕЛЯ:</b> ${ this.email.value }\n`;
-    chatMessage += `<b>СООБЩЕНИЯ ОТПРАВИТЕЛЯ:</b> ${ this.msg.value }\n`;
+const success = document.getElementById("OKmsg");
+document.getElementById("sendMSG").addEventListener("submit", function (e) {
+  e.preventDefault();
 
-    axios.post(URI_API, {
-        chat_id: CHAT_ID,
-        parse_mode: 'html',
-        text: chatMessage
+  let chatMessage = `<b>!ЗАЯВКА С САЙТА!</b>\n`;
+  chatMessage += `<b>ИМЯ ОТПРАВИТЕЛЯ:</b> ${this.name.value}\n`;
+  chatMessage += `<b>НОМЕР ОТПРАВИТЕЛЯ:</b> ${this.phone.value}\n`;
+  chatMessage += `<b>Email ОТПРАВИТЕЛЯ:</b> ${this.email.value}\n`;
+  chatMessage += `<b>СООБЩЕНИЯ ОТПРАВИТЕЛЯ:</b> ${this.msg.value}\n`;
+
+  axios
+    .post(URI_API, {
+      chat_id: CHAT_ID,
+      parse_mode: "html",
+      text: chatMessage,
     })
     .then((res) => {
-        this.name.value = "";
-        this.phone.value = "";
-        this.email.value = "";
-        this.msg.value = "";
-        success.style.display = "block";
-        setTimeout(()=>{
-            success.style.display = 'none'
-        },3000)
+      this.name.value = "";
+      this.phone.value = "";
+      this.email.value = "";
+      this.msg.value = "";
+      success.style.display = "block";
+      setTimeout(() => {
+        success.style.display = "none";
+      }, 3000);
     })
     .catch((err) => {
-        console.log(err);
+      console.log(err);
     })
     .finally(() => {
-        console.log('finish');
-    })
+      console.log("finish");
+    });
 });

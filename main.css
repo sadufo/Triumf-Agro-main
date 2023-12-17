@@ -386,7 +386,7 @@ button {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background: #FBFBFC;
+        background: #fbfbfc;
         overflow: hidden;
         display: flex;
         justify-content: space-between;
@@ -433,7 +433,8 @@ button {
         background: #026b38;
         cursor: pointer;
         text-transform: uppercase; }
-      .page__wrapper .form button:hover, .page__wrapper .form .callMe__btn:hover {
+      .page__wrapper .form button:hover,
+      .page__wrapper .form .callMe__btn:hover {
         transition: 0.5s;
         box-shadow: white 5px 5px, var(--button-color) 5px 5px 5px 0; }
       .page__wrapper .form h3 {
@@ -443,7 +444,7 @@ button {
         text-align: left; }
       .page__wrapper .form a {
         text-decoration: none;
-        color: #28292D;
+        color: #28292d;
         font-size: 0.9vw; }
       .page__wrapper .form .form__el {
         height: 80%;
@@ -461,27 +462,31 @@ button {
             left: 20px;
             transition: 0.5s;
             cursor: text;
-            color: #ACACB0; }
-          .page__wrapper .form .form__el .field__item input, .page__wrapper .form .form__el .field__item .inp__msg {
+            color: #acacb0; }
+          .page__wrapper .form .form__el .field__item input,
+          .page__wrapper .form .form__el .field__item .inp__msg {
             width: 100%;
             height: 100%;
             margin-bottom: 10px;
             display: flex;
             flex-wrap: wrap;
-            border: 1px solid #ACACB0;
+            border: 1px solid #acacb0;
             padding: 2%;
             box-sizing: border-box;
             position: relative;
             border-radius: 4px;
-            background-color: #FBFBFC; }
-          .page__wrapper .form .form__el .field__item input:focus, .page__wrapper .form .form__el .field__item .inp__msg:focus {
+            background-color: #fbfbfc; }
+          .page__wrapper .form .form__el .field__item input:focus,
+          .page__wrapper .form .form__el .field__item .inp__msg:focus {
             outline: none;
-            border-color: #95D133; }
-          .page__wrapper .form .form__el .field__item input:focus + span, .page__wrapper .form .form__el .field__item input:valid + span,
-          .page__wrapper .form .form__el .field__item .inp__msg:focus + span, .page__wrapper .form .form__el .field__item .inp__msg:valid + span {
+            border-color: #95d133; }
+          .page__wrapper .form .form__el .field__item input:focus + span,
+          .page__wrapper .form .form__el .field__item input:valid + span,
+          .page__wrapper .form .form__el .field__item .inp__msg:focus + span,
+          .page__wrapper .form .form__el .field__item .inp__msg:valid + span {
             top: -8px;
             left: 10px;
-            background-color: #FBFBFC;
+            background-color: #fbfbfc;
             padding: 0 7px; }
       .page__wrapper .form .callMe__OKmsg {
         position: absolute;
@@ -828,7 +833,7 @@ button {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background: #FBFBFC;
+        background: #fbfbfc;
         overflow: hidden;
         display: flex;
         justify-content: space-between;
@@ -875,7 +880,8 @@ button {
         background: #026b38;
         cursor: pointer;
         text-transform: uppercase; }
-      .page__wrapper .form button:hover, .page__wrapper .form .callMe__btn:hover {
+      .page__wrapper .form button:hover,
+      .page__wrapper .form .callMe__btn:hover {
         transition: 0.5s;
         box-shadow: white 5px 5px, var(--button-color) 5px 5px 5px 0; }
       .page__wrapper .form h3 {
@@ -885,7 +891,7 @@ button {
         text-align: left; }
       .page__wrapper .form a {
         text-decoration: none;
-        color: #28292D;
+        color: #28292d;
         font-size: 0.9vw; }
       .page__wrapper .form .form__el {
         height: 80%;
@@ -903,27 +909,31 @@ button {
             left: 20px;
             transition: 0.5s;
             cursor: text;
-            color: #ACACB0; }
-          .page__wrapper .form .form__el .field__item input, .page__wrapper .form .form__el .field__item .inp__msg {
+            color: #acacb0; }
+          .page__wrapper .form .form__el .field__item input,
+          .page__wrapper .form .form__el .field__item .inp__msg {
             width: 100%;
             height: 100%;
             margin-bottom: 10px;
             display: flex;
             flex-wrap: wrap;
-            border: 1px solid #ACACB0;
+            border: 1px solid #acacb0;
             padding: 2%;
             box-sizing: border-box;
             position: relative;
             border-radius: 4px;
-            background-color: #FBFBFC; }
-          .page__wrapper .form .form__el .field__item input:focus, .page__wrapper .form .form__el .field__item .inp__msg:focus {
+            background-color: #fbfbfc; }
+          .page__wrapper .form .form__el .field__item input:focus,
+          .page__wrapper .form .form__el .field__item .inp__msg:focus {
             outline: none;
-            border-color: #95D133; }
-          .page__wrapper .form .form__el .field__item input:focus + span, .page__wrapper .form .form__el .field__item input:valid + span,
-          .page__wrapper .form .form__el .field__item .inp__msg:focus + span, .page__wrapper .form .form__el .field__item .inp__msg:valid + span {
+            border-color: #95d133; }
+          .page__wrapper .form .form__el .field__item input:focus + span,
+          .page__wrapper .form .form__el .field__item input:valid + span,
+          .page__wrapper .form .form__el .field__item .inp__msg:focus + span,
+          .page__wrapper .form .form__el .field__item .inp__msg:valid + span {
             top: -8px;
             left: 10px;
-            background-color: #FBFBFC;
+            background-color: #fbfbfc;
             padding: 0 7px; }
       .page__wrapper .form .callMe__OKmsg {
         position: absolute;
@@ -974,7 +984,8 @@ button {
         justify-content: center;
         gap: 27px 0;
         padding-bottom: 65px; }
-        .page__wrapper header .mob__btn .mob_b {
+        .page__wrapper header .mob__btn .mob_b,
+        .page__wrapper header .mob__btn a {
           text-align: center;
           font-family: "Mulish";
           font-size: 1.8vw;
@@ -987,16 +998,18 @@ button {
           height: 40px;
           flex-shrink: 0;
           border-radius: 4px;
-          border: 1px solid #FFF;
-          background: #026B38; }
+          border: 1px solid #fff;
+          background: #026b38; }
         .page__wrapper header .mob__btn .btn-2 {
           width: 30%;
           height: 40px;
           flex-shrink: 0;
           border-radius: 4px;
-          border: 1px solid #FFF;
+          border: 1px solid #fff;
           background: rgba(248, 248, 248, 0.9);
-          color: #026B38; }
+          color: #026b38; }
+        .page__wrapper header .mob__btn a {
+          color: #026b38; }
       .page__wrapper header .header__title {
         display: none; }
     .page__wrapper .weHave {
@@ -1060,13 +1073,13 @@ button {
           height: auto;
           border-radius: 20px;
           padding: 120px 23px 23px 23px;
-          background: #CCDB98; }
+          background: #ccdb98; }
           .page__wrapper .aboutProducts .products__item .text__block h2 {
             position: absolute;
             top: 10px;
             left: 50%;
             transform: translate(-50%);
-            color: #28292D;
+            color: #28292d;
             font-family: "Mulish";
             font-size: 5vw;
             font-style: normal;
@@ -1079,11 +1092,11 @@ button {
             font-weight: 300;
             line-height: 140%; }
         .page__wrapper .aboutProducts .products__item .mobCol-1 {
-          background: #91C289; }
+          background: #91c289; }
         .page__wrapper .aboutProducts .products__item .mobCol-2 {
-          background: #215D34; }
+          background: #215d34; }
           .page__wrapper .aboutProducts .products__item .mobCol-2 p {
-            color: #FFF; }
+            color: #fff; }
         .page__wrapper .aboutProducts .products__item .img__block {
           order: 1;
           width: 100%;
@@ -1202,7 +1215,7 @@ button {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background: #FBFBFC;
+        background: #fbfbfc;
         overflow: hidden;
         display: flex;
         justify-content: space-between;
@@ -1249,7 +1262,8 @@ button {
         background: #026b38;
         cursor: pointer;
         text-transform: uppercase; }
-      .page__wrapper .form button:hover, .page__wrapper .form .callMe__btn:hover {
+      .page__wrapper .form button:hover,
+      .page__wrapper .form .callMe__btn:hover {
         transition: 0.5s;
         box-shadow: white 5px 5px, var(--button-color) 5px 5px 5px 0; }
       .page__wrapper .form h3 {
@@ -1259,7 +1273,7 @@ button {
         text-align: left; }
       .page__wrapper .form a {
         text-decoration: none;
-        color: #28292D;
+        color: #28292d;
         font-size: 0.9vw; }
       .page__wrapper .form .form__el {
         height: 80%;
@@ -1277,27 +1291,31 @@ button {
             left: 20px;
             transition: 0.5s;
             cursor: text;
-            color: #ACACB0; }
-          .page__wrapper .form .form__el .field__item input, .page__wrapper .form .form__el .field__item .inp__msg {
+            color: #acacb0; }
+          .page__wrapper .form .form__el .field__item input,
+          .page__wrapper .form .form__el .field__item .inp__msg {
             width: 100%;
             height: 100%;
             margin-bottom: 10px;
             display: flex;
             flex-wrap: wrap;
-            border: 1px solid #ACACB0;
+            border: 1px solid #acacb0;
             padding: 2%;
             box-sizing: border-box;
             position: relative;
             border-radius: 4px;
-            background-color: #FBFBFC; }
-          .page__wrapper .form .form__el .field__item input:focus, .page__wrapper .form .form__el .field__item .inp__msg:focus {
+            background-color: #fbfbfc; }
+          .page__wrapper .form .form__el .field__item input:focus,
+          .page__wrapper .form .form__el .field__item .inp__msg:focus {
             outline: none;
-            border-color: #95D133; }
-          .page__wrapper .form .form__el .field__item input:focus + span, .page__wrapper .form .form__el .field__item input:valid + span,
-          .page__wrapper .form .form__el .field__item .inp__msg:focus + span, .page__wrapper .form .form__el .field__item .inp__msg:valid + span {
+            border-color: #95d133; }
+          .page__wrapper .form .form__el .field__item input:focus + span,
+          .page__wrapper .form .form__el .field__item input:valid + span,
+          .page__wrapper .form .form__el .field__item .inp__msg:focus + span,
+          .page__wrapper .form .form__el .field__item .inp__msg:valid + span {
             top: -8px;
             left: 10px;
-            background-color: #FBFBFC;
+            background-color: #fbfbfc;
             padding: 0 7px; }
       .page__wrapper .form .callMe__OKmsg {
         position: absolute;
@@ -1348,7 +1366,8 @@ button {
         justify-content: center;
         gap: 27px 0;
         padding-bottom: 65px; }
-        .page__wrapper header .mob__btn .mob_b {
+        .page__wrapper header .mob__btn .mob_b,
+        .page__wrapper header .mob__btn a {
           text-align: center;
           font-family: "Mulish";
           font-size: 1.8vw;
@@ -1361,16 +1380,18 @@ button {
           height: 40px;
           flex-shrink: 0;
           border-radius: 4px;
-          border: 1px solid #FFF;
-          background: #026B38; }
+          border: 1px solid #fff;
+          background: #026b38; }
         .page__wrapper header .mob__btn .btn-2 {
           width: 30%;
           height: 40px;
           flex-shrink: 0;
           border-radius: 4px;
-          border: 1px solid #FFF;
+          border: 1px solid #fff;
           background: rgba(248, 248, 248, 0.9);
-          color: #026B38; }
+          color: #026b38; }
+        .page__wrapper header .mob__btn a {
+          color: #026b38; }
       .page__wrapper header .header__title {
         display: none; }
     .page__wrapper .weHave {
@@ -1434,13 +1455,13 @@ button {
           height: auto;
           border-radius: 20px;
           padding: 120px 23px 23px 23px;
-          background: #CCDB98; }
+          background: #ccdb98; }
           .page__wrapper .aboutProducts .products__item .text__block h2 {
             position: absolute;
             top: 10px;
             left: 50%;
             transform: translate(-50%);
-            color: #28292D;
+            color: #28292d;
             font-family: "Mulish";
             font-size: 5vw;
             font-style: normal;
@@ -1453,11 +1474,11 @@ button {
             font-weight: 300;
             line-height: 140%; }
         .page__wrapper .aboutProducts .products__item .mobCol-1 {
-          background: #91C289; }
+          background: #91c289; }
         .page__wrapper .aboutProducts .products__item .mobCol-2 {
-          background: #215D34; }
+          background: #215d34; }
           .page__wrapper .aboutProducts .products__item .mobCol-2 p {
-            color: #FFF; }
+            color: #fff; }
         .page__wrapper .aboutProducts .products__item .img__block {
           order: 1;
           width: 100%;
@@ -1576,7 +1597,7 @@ button {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background: #FBFBFC;
+        background: #fbfbfc;
         overflow: hidden;
         display: flex;
         justify-content: space-between;
@@ -1623,7 +1644,8 @@ button {
         background: #026b38;
         cursor: pointer;
         text-transform: uppercase; }
-      .page__wrapper .form button:hover, .page__wrapper .form .callMe__btn:hover {
+      .page__wrapper .form button:hover,
+      .page__wrapper .form .callMe__btn:hover {
         transition: 0.5s;
         box-shadow: white 5px 5px, var(--button-color) 5px 5px 5px 0; }
       .page__wrapper .form h3 {
@@ -1633,7 +1655,7 @@ button {
         text-align: left; }
       .page__wrapper .form a {
         text-decoration: none;
-        color: #28292D;
+        color: #28292d;
         font-size: 0.9vw; }
       .page__wrapper .form .form__el {
         height: 80%;
@@ -1651,27 +1673,31 @@ button {
             left: 20px;
             transition: 0.5s;
             cursor: text;
-            color: #ACACB0; }
-          .page__wrapper .form .form__el .field__item input, .page__wrapper .form .form__el .field__item .inp__msg {
+            color: #acacb0; }
+          .page__wrapper .form .form__el .field__item input,
+          .page__wrapper .form .form__el .field__item .inp__msg {
             width: 100%;
             height: 100%;
             margin-bottom: 10px;
             display: flex;
             flex-wrap: wrap;
-            border: 1px solid #ACACB0;
+            border: 1px solid #acacb0;
             padding: 2%;
             box-sizing: border-box;
             position: relative;
             border-radius: 4px;
-            background-color: #FBFBFC; }
-          .page__wrapper .form .form__el .field__item input:focus, .page__wrapper .form .form__el .field__item .inp__msg:focus {
+            background-color: #fbfbfc; }
+          .page__wrapper .form .form__el .field__item input:focus,
+          .page__wrapper .form .form__el .field__item .inp__msg:focus {
             outline: none;
-            border-color: #95D133; }
-          .page__wrapper .form .form__el .field__item input:focus + span, .page__wrapper .form .form__el .field__item input:valid + span,
-          .page__wrapper .form .form__el .field__item .inp__msg:focus + span, .page__wrapper .form .form__el .field__item .inp__msg:valid + span {
+            border-color: #95d133; }
+          .page__wrapper .form .form__el .field__item input:focus + span,
+          .page__wrapper .form .form__el .field__item input:valid + span,
+          .page__wrapper .form .form__el .field__item .inp__msg:focus + span,
+          .page__wrapper .form .form__el .field__item .inp__msg:valid + span {
             top: -8px;
             left: 10px;
-            background-color: #FBFBFC;
+            background-color: #fbfbfc;
             padding: 0 7px; }
       .page__wrapper .form .callMe__OKmsg {
         position: absolute;
@@ -1719,7 +1745,8 @@ button {
         justify-content: center;
         gap: 27px 0;
         padding-bottom: 65px; }
-        .page__wrapper header .mob__btn .mob_b {
+        .page__wrapper header .mob__btn .mob_b,
+        .page__wrapper header .mob__btn a {
           text-align: center;
           font-family: "Mulish";
           font-size: 10px;
@@ -1732,16 +1759,18 @@ button {
           height: 40px;
           flex-shrink: 0;
           border-radius: 4px;
-          border: 1px solid #FFF;
-          background: #026B38; }
+          border: 1px solid #fff;
+          background: #026b38; }
         .page__wrapper header .mob__btn .btn-2 {
           width: 40%;
           height: 40px;
           flex-shrink: 0;
           border-radius: 4px;
-          border: 1px solid #FFF;
+          border: 1px solid #fff;
           background: rgba(248, 248, 248, 0.9);
-          color: #026B38; }
+          color: #026b38; }
+        .page__wrapper header .mob__btn a {
+          color: #026b38; }
       .page__wrapper header .header__title {
         display: none; }
     .page__wrapper .weHave {
@@ -1805,13 +1834,13 @@ button {
           height: auto;
           border-radius: 20px;
           padding: 100px 23px 23px 23px;
-          background: #CCDB98; }
+          background: #ccdb98; }
           .page__wrapper .aboutProducts .products__item .text__block h2 {
             position: absolute;
             top: 10px;
             left: 50%;
             transform: translate(-50%);
-            color: #28292D;
+            color: #28292d;
             font-family: "Mulish";
             font-size: 25px;
             font-style: normal;
@@ -1824,11 +1853,11 @@ button {
             font-weight: 300;
             line-height: 140%; }
         .page__wrapper .aboutProducts .products__item .mobCol-1 {
-          background: #91C289; }
+          background: #91c289; }
         .page__wrapper .aboutProducts .products__item .mobCol-2 {
-          background: #215D34; }
+          background: #215d34; }
           .page__wrapper .aboutProducts .products__item .mobCol-2 p {
-            color: #FFF; }
+            color: #fff; }
         .page__wrapper .aboutProducts .products__item .img__block {
           order: 1;
           width: 100%;
@@ -1944,7 +1973,7 @@ button {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background: #FBFBFC;
+        background: #fbfbfc;
         overflow: hidden;
         display: flex;
         justify-content: space-between;
@@ -1991,7 +2020,8 @@ button {
         background: #026b38;
         cursor: pointer;
         text-transform: uppercase; }
-      .page__wrapper .form button:hover, .page__wrapper .form .callMe__btn:hover {
+      .page__wrapper .form button:hover,
+      .page__wrapper .form .callMe__btn:hover {
         transition: 0.5s;
         box-shadow: white 5px 5px, var(--button-color) 5px 5px 5px 0; }
       .page__wrapper .form h3 {
@@ -2001,7 +2031,7 @@ button {
         text-align: left; }
       .page__wrapper .form a {
         text-decoration: none;
-        color: #28292D;
+        color: #28292d;
         font-size: 0.9vw; }
       .page__wrapper .form .form__el {
         height: 80%;
@@ -2019,27 +2049,31 @@ button {
             left: 20px;
             transition: 0.5s;
             cursor: text;
-            color: #ACACB0; }
-          .page__wrapper .form .form__el .field__item input, .page__wrapper .form .form__el .field__item .inp__msg {
+            color: #acacb0; }
+          .page__wrapper .form .form__el .field__item input,
+          .page__wrapper .form .form__el .field__item .inp__msg {
             width: 100%;
             height: 100%;
             margin-bottom: 10px;
             display: flex;
             flex-wrap: wrap;
-            border: 1px solid #ACACB0;
+            border: 1px solid #acacb0;
             padding: 2%;
             box-sizing: border-box;
             position: relative;
             border-radius: 4px;
-            background-color: #FBFBFC; }
-          .page__wrapper .form .form__el .field__item input:focus, .page__wrapper .form .form__el .field__item .inp__msg:focus {
+            background-color: #fbfbfc; }
+          .page__wrapper .form .form__el .field__item input:focus,
+          .page__wrapper .form .form__el .field__item .inp__msg:focus {
             outline: none;
-            border-color: #95D133; }
-          .page__wrapper .form .form__el .field__item input:focus + span, .page__wrapper .form .form__el .field__item input:valid + span,
-          .page__wrapper .form .form__el .field__item .inp__msg:focus + span, .page__wrapper .form .form__el .field__item .inp__msg:valid + span {
+            border-color: #95d133; }
+          .page__wrapper .form .form__el .field__item input:focus + span,
+          .page__wrapper .form .form__el .field__item input:valid + span,
+          .page__wrapper .form .form__el .field__item .inp__msg:focus + span,
+          .page__wrapper .form .form__el .field__item .inp__msg:valid + span {
             top: -8px;
             left: 10px;
-            background-color: #FBFBFC;
+            background-color: #fbfbfc;
             padding: 0 7px; }
       .page__wrapper .form .callMe__OKmsg {
         position: absolute;
