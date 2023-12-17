@@ -1047,6 +1047,9 @@ button {
           display: flex;
           justify-content: center;
           align-items: center; }
+          .page__wrapper .weHave .weHave__list .list__item a {
+            display: flex;
+            justify-content: center; }
           .page__wrapper .weHave .weHave__list .list__item img {
             width: 50%; }
           .page__wrapper .weHave .weHave__list .list__item button {
@@ -1429,6 +1432,9 @@ button {
           display: flex;
           justify-content: center;
           align-items: center; }
+          .page__wrapper .weHave .weHave__list .list__item a {
+            display: flex;
+            justify-content: center; }
           .page__wrapper .weHave .weHave__list .list__item img {
             width: 50%; }
           .page__wrapper .weHave .weHave__list .list__item button {
@@ -1808,6 +1814,9 @@ button {
           display: flex;
           justify-content: center;
           align-items: center; }
+          .page__wrapper .weHave .weHave__list .list__item a {
+            display: flex;
+            justify-content: center; }
           .page__wrapper .weHave .weHave__list .list__item img {
             width: 70%; }
           .page__wrapper .weHave .weHave__list .list__item button {
